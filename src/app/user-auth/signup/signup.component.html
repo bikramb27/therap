@@ -1,0 +1,239 @@
+<div class="main">
+  <!-- Left Image section -->
+  <div class="image display-inline-block left-image-section">
+    <img [src]="url" alt="therapimg" />
+  </div>
+
+  <!-- Right form section -->
+  <div class="display-inline-block right-form-section">
+    <div class="languageselection">
+      <div class="languageselectionoption">
+        <select name="language" id="language">
+          <option value="eng">ENG</option>
+        </select>
+      </div>
+    </div>
+    <div class="logotitle">
+      <img [src]="logo" width="200px" height="auto" />
+    </div>
+    <div class="loginoption">
+      Already a member?
+      <a routerLink="../login" style="color: #1bbcf3">Login</a>
+    </div>
+    <!-- Social media -->
+    <div class="social-login-buttons">
+      <button class="fblogin">
+        <span
+          >Sign up with <img [src]="fb" style="width: 59px; height: 12px"
+        /></span></button
+      >&nbsp;&nbsp;
+      <button class="googlelogin">
+        <span>Sign up with <img [src]="google" /></span>
+      </button>
+    </div>
+    <div class="ormain">
+      <div class="orword">OR</div>
+    </div>
+    <!-- Registration form -->
+    <div class="registration-form">
+      <form [formGroup]="registerform" (ngSubmit)="signup()">
+        <select type="text" name="cars" id="cars">
+          <option value="Mr">Mr</option>
+          <option value="Ms">Ms</option>
+          <option value="Mrs">Mrs</option></select
+        >&nbsp;&nbsp;
+        <input
+          type="textname"
+          name="firstname"
+          placeholder="First name"
+          formControlName="firstname"
+          style="width: 151px"
+        /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['firstname'].dirty &&
+            registerform.hasError('required', 'firstname')
+          "
+          >*Firstname is required</span
+        >&nbsp;&nbsp;
+        <input
+          type="textname"
+          name="last name"
+          placeholder="Last name"
+          formControlName="lastname"
+          style="width: 157px"
+        /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['lastname'].dirty &&
+            registerform.hasError('required', 'lastname')
+          "
+          >*lastname is required</span
+        ><br /><br />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email Address"
+          formControlName="email"
+          id="email"
+        /><br /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['email'].dirty &&
+            registerform.hasError('required', 'email') &&
+            registerform.hasError('pattern', 'email')
+          "
+          >*Email is required</span
+        ><br /><br />
+        <input
+          type="text"
+          name="password"
+          placeholder="Create Password"
+          formControlName="password"
+          id="password"
+        /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['password'].dirty &&
+            registerform.hasError('required', 'password')
+          "
+          >*Password is required</span
+        ><br /><br />
+
+        <input
+          type="text"
+          name="reenterpassword"
+          placeholder="Re-Enter Password"
+          formControlName="repassword"
+          id="repassword"
+        /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['repassword'].dirty &&
+            registerform.hasError('required', 'repassword')
+          "
+          >*Password is required</span
+        ><br /><br />
+
+        <select
+          name="counytrycode"
+          id="countrycode"
+          type="number"
+          style="width: 80px"
+        >
+          <option value="+91">+91</option>
+          <option value="+972">+972</option></select
+        >&nbsp;
+        <input
+          type="text"
+          name="phonenumber"
+          placeholder="Phone Number"
+          formControlName="phonenumber"
+          style="width: 328px"
+        /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['phonenumber'].dirty &&
+            registerform.hasError('required', 'phonenumber')
+          "
+          >*Password is required</span
+        ><br /><br />
+
+        <input
+          type="text"
+          name="address"
+          placeholder="Street"
+          formControlName="address"
+          style="width: 415px"
+        /><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['address'].dirty &&
+            registerform.hasError('required', 'address')
+          "
+          >*address is required</span
+        ><br /><br />
+        <select
+          type="text"
+          name="cityname"
+          id="City"
+          formControlName="city"
+          style="width: 203px"
+        >
+          <option value="" disabled selected hidden>City</option>
+          <option value="x">x</option>
+          <option value="y">y</option></select
+        ><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['city'].dirty &&
+            registerform.hasError('required', 'city')
+          "
+          >*city is required</span
+        >&nbsp;
+        <select
+          type="text"
+          name="country"
+          id="country"
+          formControlName="country"
+          style="width: 203px"
+        >
+          <option value="" disabled selected hidden>Country</option>
+          <option value="a">a</option>
+          <option value="b">b</option></select
+        ><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['country'].dirty &&
+            registerform.hasError('required', 'country')
+          "
+          >*country is required</span
+        ><br /><br />
+        <input
+          type="text"
+          name="zipcode"
+          placeholder="Zipcode"
+          formControlName="zipcode"
+          style="width: 203px"
+        />&nbsp;
+        <select
+          type="text"
+          name="currency"
+          id="currency"
+          formControlName="currency"
+          style="width: 203px; height: 50px"
+        >
+          <option value="" disabled selected hidden>Currency</option>
+          <option value="a">a</option>
+          <option value="b">b</option></select
+        ><span
+          class="text-danger"
+          *ngIf="
+            registerform.controls['currency'].dirty &&
+            registerform.hasError('required', 'currency')
+          "
+          >*currency is required</span
+        ><br /><br />
+        <select
+          type="text"
+          name="language"
+          id="language"
+          formControlName="language"
+          style="width: 415px"
+        >
+          <option value="" disabled selected hidden>language</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+        </select>
+        <div class="terms">
+          By sign up in or creating an account,you agree<br />
+          with our <a href="#"> Terms & conditions</a>and
+          <a href="#">Privacy Statement</a>
+        </div>
+        <button class="actions" [disabled]="!registerform.valid">
+          <span class="icon">SIGN UP</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+<div class="main">
+  <!-- Left Image section -->
+  <div class="row">
+    <div class="image display-inline-block left-image-section">
+      <img [src]="url" alt="therapimg" />
+    </div>
+
+    <!-- Right form section -->
+    <div class="display-inline-block right-form-section">
+      <div class="languageselection">
+        <div class="languageselectionoption">
+          <select
+            id="language"
+            #language
+            (change)="translatesite(language.value)"
+          >
+            <option
+              *ngFor="let localization of translateService.getLangs()"
+              [value]="localization"
+              {{localization}}
+            ></option>
+          </select>
+        </div>
+      </div>
+      <div class="logotitle">
+        <Span>Login to</Span> &nbsp; &nbsp;
+        <div class="logotitle-image">
+          <img [src]="loginlogo" />
+        </div>
+      </div>
+      <div class="loginoption">
+        Don't have an account?
+        <a routerLink="../signup" style="color: #1bbcf3; text-decoration: none"
+          >Sign up</a
+        >
+      </div>
+      <form [formGroup]="loginform" (ngSubmit)="login()">
+        <div class="email-address">
+          <input
+            type="email"
+            id="emailbox"
+            name="emailaddress"
+            formControlName="email"
+            placeholder="Email address"
+          /><br />
+          <span
+            class="text-danger"
+            *ngIf="
+              loginform.controls['email'].dirty &&
+              loginform.hasError('required', 'email')
+            "
+            >*email is required</span
+          >
+        </div>
+        <div class="password">
+          <input
+            type="password"
+            id="passwordbox"
+            name="password"
+            formControlName="password"
+            placeholder="Password"
+          /><br />
+          <span
+            class="text-danger"
+            *ngIf="
+              loginform.controls['password'].dirty &&
+              loginform.hasError('required', 'password')
+            "
+            >*Password is required</span
+          >
+        </div>
+        <div class="signupbutton">
+          <button class="actions" [disabled]="!loginform.valid">
+            <span class="icon">LOGIN</span>
+          </button>
+        </div>
+      </form>
+      <div class="Forgot-password-login">
+        <a routerLink="../create-password"> Forgot Password?</a>
+      </div>
+      <div class="ormain">
+        <div class="orword">OR</div>
+      </div>
+      <div class="social-login-buttons-loginpage">
+        <button class="fblogin-loginpage">
+          <span
+            >Sign up with <img [src]="fb" style="width: 59px; height: 12px"
+          /></span></button
+        >&nbsp;&nbsp;
+        <button class="googlelogin-loginpage">
+          <span>Sign up with <img [src]="google" /></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

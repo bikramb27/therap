@@ -1,0 +1,136 @@
+<div class="main">
+  <div class="display-inline-block leftimage">
+    <img [src]="addservice" />
+  </div>
+  <div class="display-inline-block rightsection">
+    <div class="languageselection">
+      <div class="languageselectionoption">
+        <select name="language" id="language">
+          <option value="eng">ENG</option>
+        </select>
+      </div>
+    </div>
+    <div class="profile">Profile</div>
+
+    <div class="text">
+      <span id="content1"
+        >Select any services which your are offering or create</span
+      ><span id="content2"> new services</span>
+    </div>
+
+    <div class="services">
+      <label
+        >Add new service
+        <a routerLink="../profileupdate"> Back to default services</a></label
+      >
+      <input
+        type="text"
+        name="servicename"
+        id="servicename"
+        placeholder="Enter Service Name"
+      />
+    </div>
+    <div class="servicevalue">
+      <input
+        type="text"
+        name="servicetime"
+        id="servicetime"
+        placeholder="Enter Duration in Minutes Ex:45m"
+      /><img
+        [src]="iicon"
+        title="Duration in Minutes Ex:45m"
+        style="margin-left: -30px"
+      />
+    </div>
+    <div>
+      <select name="locations" id="locations">
+        <option value="" disabled selected hidden>Select location</option>
+        <option>a</option>
+      </select>
+      <input
+        type="text"
+        name="Farevalue"
+        id="farevalue"
+        placeholder="Enter Service Name"
+      />
+    </div>
+    <div class="description-class">
+      <input
+        id="description"
+        type="text"
+        name="adddescription"
+        placeholder="Add description"
+      /><img [src]="group" />
+    </div>
+    <div class="uploadpicture">
+      <label
+        >Upload Picture
+        <img
+          [src]="iicon"
+          title="This Picture will appear on your personal page"
+      /></label>
+    </div>
+    <div class="uploadpicturebox">
+      <input
+        type="file"
+        id="inputboxforuploadpicture"
+        name="uploadpicture"
+        placeholder="No file selected"
+      />
+    </div>
+
+    <div class="bio">
+      <label
+        >Bio
+        <img
+          [src]="iicon"
+          title="This Picture will appear on your personal page"
+      /></label>
+    </div>
+    <div class="inputboxclassforbio">
+      <input id="bioinputbox" type="text" name="bio" /><img [src]="group" />
+    </div>
+    <div class="insurancecertificate">
+      <label
+        >Insurance Certificate
+        <img
+          [src]="iicon"
+          title="This Picture will appear on your personal page"
+      /></label>
+    </div>
+    <div class="uploadinsurancecertificatebox">
+      <input
+        type="file"
+        id="inputboxforuploadcertificate"
+        name="uploadcertificate"
+        placeholder="No file selected"
+      />
+    </div>
+
+    <div class="connectwith-google-calendar-platform">
+      <input
+        type="checkbox"
+        id="google-calneder-connect"
+        name="calender"
+        value="gcalender"
+      />
+      <label for="gaclender"> Connect with</label> &nbsp;
+      <img [src]="gcalendar" />&nbsp;<img [src]="iicon" />
+    </div>
+    <div class="connect-with-zoom-platform">
+      <input type="checkbox" id="zoom-connect" name="zomm" value="zoom" />
+      <label for="zoom"> Connect with</label> &nbsp;
+      <img [src]="zoom" />&nbsp;<img [src]="iicon" />
+    </div>
+    <div class="connect-with-whatsapp-platform">
+      <input type="checkbox" id="whatsapp" name="whatsapp" value="whatsapp" />
+      <label for="whatsapp"> Connect with</label> &nbsp;
+      <img [src]="whatsapp" />&nbsp;<img [src]="iicon" />
+    </div>
+    <div>
+      <button class="actions">
+        <span class="icon">UPDATE</span>
+      </button>
+    </div>
+  </div>
+</div>

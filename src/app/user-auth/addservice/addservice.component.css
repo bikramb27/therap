@@ -1,0 +1,283 @@
+.main {
+  height: 100vh;
+}
+
+.leftimage {
+  width: 532px;
+}
+.leftimage img {
+  height: 100%;
+  width: 100%;
+}
+
+.rightsection {
+  vertical-align: top;
+  width: calc(100% - 532px);
+  height: 100%;
+  overflow: auto;
+}
+.languageselection {
+  width: 60px;
+  height: 22px;
+  margin-left: 600px;
+  margin-top: 36px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dee2e6;
+  border-radius: 11px;
+  opacity: 1;
+}
+.languageselectionoption {
+  margin-top: 3px;
+  text-align: center;
+  font: normal normal normal 12px/15px muli;
+  letter-spacing: 0px;
+  color: #808997;
+  opacity: 1;
+}
+.languageselectionoption select {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+.profile {
+  margin-top: 32px;
+  margin-left: 98px;
+  width: 82px;
+  height: 32px;
+  text-align: left;
+  font: normal normal 800 38px/45px Muli;
+  letter-spacing: 0px;
+  color: #00122f;
+  opacity: 1;
+}
+.text {
+  width: 421px;
+  margin-top: 15px;
+  margin-left: 100px;
+  text-align: left;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #808997;
+  opacity: 1;
+}
+#content1::after {
+  content: "\a";
+  display: block;
+}
+.services label {
+  margin-top: 40px;
+  margin-left: 100px;
+  display: block;
+  text-align: left;
+  font: normal normal 600 18px/28px Muli;
+  letter-spacing: 0px;
+  color: #00122f;
+  opacity: 1;
+}
+.services a {
+  text-decoration: none;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font: normal normal 600 18px/28px Muli;
+  letter-spacing: 0px;
+  color: #1bbcf3;
+  opacity: 1;
+}
+#servicename {
+  width: 421px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 100px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(231, 234, 237, 1);
+  border-radius: 6px;
+  opacity: 1;
+}
+#servicetime {
+  width: 421px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 100px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(231, 234, 237, 1);
+  border-radius: 6px;
+  opacity: 1;
+}
+#servicevalue img {
+  margin-left: 50px;
+}
+#locations {
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 200px;
+  height: 50px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(231, 234, 237, 1);
+  border-radius: 6px;
+  opacity: 1;
+}
+#farevalue {
+  width: 200px;
+  height: 50px;
+  margin-left: 21px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(231, 234, 237, 1);
+  border-radius: 6px;
+  opacity: 1;
+}
+#description {
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 421px;
+  height: 80px;
+  background: rgba(248, 249, 251, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(231, 234, 237, 1);
+  border-radius: 6px;
+  opacity: 1;
+}
+.description-class img {
+  margin-left: -18px;
+  margin-top: 55px;
+}
+/*class for uploadpicture label*/
+.uploadpicture {
+  margin-top: 20px;
+  margin-left: 100px;
+  font-family: sans-serif;
+  text-align: left;
+  font: normal normal 600 18px/28px Muli;
+  letter-spacing: 0px;
+  color: #00122f;
+  opacity: 1;
+}
+/*class for uploadpicture inputbox div*/
+.uploadpicturebox {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+/*id for uploadpicture inputbox style*/
+#inputboxforuploadpicture {
+  width: 421px;
+  height: 50px;
+  text-align: center;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e7eaed;
+}
+/*class for uploadpicture choosebutton div*/
+.choosefilebuttonforimage {
+  margin-top: -40px;
+  margin-left: 120px;
+}
+.bio {
+  margin-top: 20px;
+  margin-left: 100px;
+  text-align: left;
+  font: normal normal 600 18px/28px Muli;
+  letter-spacing: 0px;
+  color: rgba(0, 18, 47, 1);
+  opacity: 1;
+}
+#bioinputbox {
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 421px;
+  height: 80px;
+  background: rgba(248, 249, 251, 1) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(231, 234, 237, 1);
+  border-radius: 6px;
+  opacity: 1;
+}
+.inputboxclassforbio img {
+  margin-left: -18px;
+  margin-top: 55px;
+}
+.insurancecertificate {
+  margin-top: 25px;
+  margin-left: 100px;
+  text-align: left;
+  font: normal normal 600 18px/28px Muli;
+  letter-spacing: 0px;
+  color: rgba(0, 18, 47, 1);
+  opacity: 1;
+}
+.uploadinsurancecertificatebox {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+#inputboxforuploadcertificate {
+  width: 421px;
+  height: 50px;
+  text-align: center;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e7eaed;
+  border-radius: 6px;
+  opacity: 1;
+}
+.choosefilebuttonforcertificate {
+  margin-top: -40px;
+  margin-left: 120px;
+}
+.connectwith-google-calendar-platform {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.connectwith-google-calendar-platform label {
+  margin-left: 10px;
+  text-align: left;
+  font: normal normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: rgba(128, 137, 151, 1);
+  opacity: 1;
+}
+.connect-with-zoom-platform {
+  margin-top: 5px;
+  margin-left: 100px;
+}
+.connect-with-zoom-platform label {
+  margin-left: 10px;
+  text-align: left;
+  font: normal normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: rgba(128, 137, 151, 1);
+  opacity: 1;
+}
+.connect-with-whatsapp-platform {
+  margin-top: 5px;
+  margin-left: 100px;
+}
+.connect-with-whatsapp-platform label {
+  margin-left: 10px;
+  text-align: left;
+  font: normal normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: rgba(128, 137, 151, 1);
+  opacity: 1;
+}
+.actions {
+  margin-left: 100px;
+  margin-top: 5px;
+  width: 421px;
+  height: 60px;
+  background: #1bbcf3 0% 0% no-repeat padding-box;
+  border: 1px solid #e7eaed;
+  border-radius: 6px;
+  opacity: 1;
+}
+.icon {
+  width: 72px;
+  height: 26px;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
